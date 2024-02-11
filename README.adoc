@@ -1,0 +1,28 @@
+= *Exercise's backend*
+
+== Introduction
+In this Node.js project, we aim to develop an Express server with two endpoints. The goal is to retrieve information about book lists from The New York Times and integrate Google Books previews for books within those lists.
+
+== Getting started
+[source,shell]
+git clone https://github.com/b8simone/esercizio_colloquio.git && code esercizio_colloquio/
+
+== Available scripts
+
+In the project directory, you can run:
+
+=== Debug
+[source,npm]
+npm start
+
+Runs backend in debug mode at port 3000
+
+=== Build
+[source,npm]
+npm run build
+
+- Builds the backend for production to the `build` folder
+
+==== Environment variables
+
+- `EXPRESS_PORT`: Port used from express for API. Default `3000`

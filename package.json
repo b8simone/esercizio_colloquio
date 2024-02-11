@@ -1,0 +1,33 @@
+{
+  "name": "esercizio_colloquio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "pkg ."
+  },
+  "pkg": {
+    "scripts": "index.js",
+    "assets": [
+      "./models/*",
+      "./routes/*",
+      "./*"
+    ],
+    "targets": [
+      "node16-macos-arm64"
+    ],
+    "outputPath": "./build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "pkg": "^5.8.1",
+    "request-promise": "^4.2.6"
+  }
+}
